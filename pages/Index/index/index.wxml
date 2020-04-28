@@ -1,4 +1,5 @@
 <view class="container home-container">
+
     <view class="row"  bindtap="goBusiness" wx:if="{{level == 2}}">
       <view class="logo"><image style="width: 100%;height: 200rpx;" mode="scaleToFill" src="/images/index/month.jpg"></image></view>
       <view class="main">
