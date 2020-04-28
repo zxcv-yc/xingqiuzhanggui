@@ -1,0 +1,52 @@
+
+.list{
+	padding: 0 30rpx;
+	color: #000;
+	font-size: 28rpx;
+}
+.row{
+	overflow: hidden;
+	border-bottom: 1rpx solid #E6E6E6;
+}
+.left{
+	font-size: 32rpx;
+	padding: 30rpx 0;
+	float: left;
+}
+
+.right{
+	padding: 15rpx 0;
+	float: right;
+	display: flex;
+}
+.edit{
+	padding: 10rpx 20rpx;
+	border: 5rpx;
+	display: inline-block;
+	background: #fe5512;
+	margin-left: 15rpx;
+	font-size: 30rpx;
+	color: #fff;
+}
+.bottom{
+	font-size: 28rpx;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.zhan{
+	height: 90rpx;
+	width: 100%;
+}
+.add{
+	margin: 40rpx auto;
+	text-align: center;
+	width: 80%;
+	height: 80rpx;
+	line-height: 80rpx;
+	border-radius: 40rpx;
+	background: #fe5512;
+	color: #fff;
+}

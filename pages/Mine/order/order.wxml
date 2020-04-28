@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main">
+    <!--nav  -->
+    <view class="index-nav">
+      <view class="nav-item" data-status="0" bindtap="changStatus">
+        <view class="nav {{status == 0?'active':''}}">全部</view>
+        <view class="nav-line" wx:if="{{status == 0}}"></view>
+      </view>
+      <view class="nav-item" data-status="2" bindtap="changStatus">
+        <view class="nav {{status == 2?'active':''}}">待处理</view>
+        <view class="nav-line" wx:if="{{status == 2}}"></view>
+      </view>
+      <view class="nav-item" data-status="3" bindtap="changStatus">
+        <view class="nav {{status == 3?'active':''}}">已完成</view>
+        <view class="nav-line" wx:if="{{status == 3}}"></view>
+      </view>
+    </view>
+    <view class="nodata" wx:if="{{list.length == 0}}">
+      暂无数据
+    </view>
+    <!--nav  -->
+    <view class="list" wx:if="{{list.length > 0}}">
+      <block wx:for="{{list}}">
+      <view class="row">
+        <view class="head">
+          <view class="left">{{item.goods.goods_name}}</view>
+          <view class="right" wx:if="{{item.status == 0}}">全部</view>
+          <view class="right" wx:if="{{item.status == 2}}">待处理</view>
+          <view class="right" wx:if="{{item.status == 3}}">已完成</view>
+        </view>
+        <view class="content">
+          <view class="pic"><image style="width: 100%;border-radius: 10rpx;" mode="widthFix" src="{{url}}{{item.pic}}"></image></view>
+          <view class="info">
+            <view class="desc">下单时间:{{item.add_time}}</view>
+            <view class="desc" wx:if="{{item.status == 2}}">剩余有效天数：{{item.expiry}}</view>
+            <view class="desc" wx:if="{{item.status == 3}}">消费时间：{{item.expiry}}</view>
+            <view class="desc">共计{{item.num}}件：{{item.real_amount}}</view>
+          </view>
+        </view>
+        <view class="btn">
+          <view class="payname">客户名称</view>
+          <view class="pay">{{item.user_name}}</view>
+        </view>
+      </view>
+      </block>
+     
+    </view>
+  
+  </view>
+        
+</view>

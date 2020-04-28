@@ -1,0 +1,125 @@
+.shop{
+	padding: 30rpx;
+	display: flex;
+}
+.shop-icon{
+	width: 150rpx;
+}
+.shop-info{
+	flex: 1;
+	margin: 0 15rpx;
+	position: relative;
+}
+.liansuo{
+	position: absolute;
+	top: 10rpx;
+	right: 15rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	font-size: 20rpx;
+	padding: 0 10rpx;
+	border-radius: 15rpx 15rpx 15rpx 0;
+	background: #fe5512;
+	color: #fff;
+}
+.shop-name{
+	margin-top: 20rpx;
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.account{
+	margin-top: 20rpx;
+	font-size: 25rpx;
+	color: #666;
+}
+.next{
+	margin-top: 40rpx;
+	width: 30rpx;
+}
+.main{
+	background: #fff;
+	padding: 20rpx 30rpx 30rpx;
+	border-radius: 20rpx 20rpx 0 0;
+}
+.order{
+	margin-top: 15rpx;
+	border:1rpx solid #f7f6f6;
+	border-radius: 10rpx;
+	padding: 30rpx 20rpx;
+	box-shadow:0rpx 0rpx 4rpx 4rpx #f7f6f6;
+}
+.item-row{
+	display: flex;
+}
+.tip{
+	position: absolute;
+	top: 0;
+	right: 25rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	font-size: 20rpx;
+	padding: 0 10rpx;
+	border-radius: 15rpx 15rpx 15rpx 0;
+	background: #fe5512;
+	color: #fff;
+}
+.item{
+	position: relative;
+	flex: 1;
+	font-size: 28rpx;
+	margin-top: 15rpx;
+	text-align: center;
+	color: #191919;
+}
+.order-icon{
+	width: 60rpx;
+	margin: 0 auto 10rpx;
+}
+.row{
+	overflow: hidden;
+	padding:20rpx 0; 
+	font-size:28rpx;
+}
+.left{
+	float: left;
+	display: flex;
+	width: 50%;
+	position: relative;
+}
+.coupon-icon{
+	padding-top: 5rpx;
+	width: 35rpx;
+}
+.coupon-icon.tebie{
+	padding-top: 8rpx;
+}
+.coupon-text{
+	margin-left: 15rpx;
+	display: flex;
+	align-items: center;
+}
+.right{
+	float: right;
+	width: 25rpx;
+	line-height: 50rpx;
+}
+button.share-btn{
+ background: #fff;
+ display: block;
+ padding-left: 0;
+ padding-right: 0;
+ color: #191919;
+ font-size:28rpx;
+}
+.tipnew{
+	position: absolute;
+	top: -10rpx;
+	left: 175rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	font-size: 20rpx;
+	padding: 0 10rpx;
+	border-radius: 15rpx 15rpx 15rpx 0;
+	background: #fe5512;
+	color: #fff;
+}

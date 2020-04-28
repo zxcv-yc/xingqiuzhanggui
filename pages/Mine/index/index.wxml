@@ -1,0 +1,164 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="shop" bindtap="goDetail">
+    <view class="shop-icon">
+      <image style="width: 100%;border-radius: 10rpx;" mode="widthFix" src="{{url}}{{info.pic}}"></image>
+    </view>
+    <view class="shop-info">
+      <view class="shop-name">{{info.shop_name}}</view>
+      <view class="account">账号:{{info.account}}</view>
+      <!-- <view class="liansuo" wx:if="{{info.linkage == 2}}">连锁</view> -->
+    </view>
+    <view class="next">
+      <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+    </view>
+  </view>
+  <view class="main">
+    <view class="order">
+      <view class="item-row">
+        <view class="item" data-status="2" bindtap="goOrder">
+          <view class="order-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/index/wait1.png"></image>
+          </view>
+          <view class="card-text">待处理</view>
+          <view class="tip" wx:if="{{info.count > 0}}">{{info.count}}</view>
+        </view>
+        <view class="item" data-status="0" bindtap="goOrder">
+          <view class="order-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/all.png"></image>
+          </view>
+          <view class="card-text">全部</view>
+        </view>
+        <view class="item" data-status="3" bindtap="goOrder">
+          <view class="order-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/over.png"></image>
+          </view>
+          <view class="card-text">已完成</view>
+        </view>
+      </view>
+    </view>
+    <view class="order">
+      <!-- <view class="row" bindtap="goMoney">
+        <view class="left">
+          <view class="coupon-icon"><image style="width: 100%;" mode="widthFix" src="/images/mine/qianbao.png"></image></view>
+          <view class="coupon-text">我的钱包</view>
+        </view>
+        <view class="right"><image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image></view>
+      </view>
+      <view class="row" bindtap="goBusiness">
+        <view class="left">
+          <view class="coupon-icon"><image style="width: 100%;" mode="widthFix" src="/images/index/month1.png"></image></view>
+          <view class="coupon-text">营业额</view>
+        </view>
+        <view class="right"><image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image></view>
+      </view> -->
+      <view class="row" bindtap="goAbout">
+        <view class="left">
+          <view class="coupon-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/about.png"></image>
+          </view>
+          <view class="coupon-text">关于我们</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+      <view class="row">
+        <button class="share-btn" open-type="contact">
+          <view class="left">
+            <view class="coupon-icon">
+              <image style="width: 100%;" mode="widthFix" src="/images/mine/kefu.png"></image>
+            </view>
+            <view class="coupon-text">联系客服</view>
+          </view>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+          </view>
+        </button>
+      </view>
+      <view class="row" bindtap="goCouponManagement">
+
+          <view class="left">
+            <view class="coupon-icon">
+              <image style="width: 100%;" mode="widthFix" src="/images/mine/coupon.png"></image>
+            </view>
+            <view class="coupon-text">优惠劵管理</view>
+          </view>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+          </view>
+      
+      </view>
+      <view class="row" bindtap="goWithdraw">
+        <view class="left">
+          <view class="coupon-icon tebie">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/tixian.png"></image>
+          </view>
+          <view class="coupon-text">银行卡信息</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+      <view class="row" bindtap="{{isWxAuthorize?'wxBinded':'wxBind'}}">
+        <view class="left">
+          <view class="coupon-icon tebie">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/wxlogo.png"></image>
+          </view>
+          <view class="coupon-text">绑定微信</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+      <view class="row" bindtap="goGoodList">
+        <view class="left">
+          <view class="coupon-icon tebie">
+            <image style="width: 100%;" mode="widthFix" src="/images/icon/shenhe.png"></image>
+          </view>
+          <view class="coupon-text">商品审核</view>
+          <view class="tipnew" wx:if="{{info.waitnum > 0}}">{{info.waitnum}}</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+
+
+
+      <view class="row" bindtap="goRecord">
+        <view class="left">
+          <view class="coupon-icon tebie">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/txjl.png"></image>
+          </view>
+          <view class="coupon-text">提现</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+      <view class="row" bindtap="goManage">
+        <view class="left">
+          <view class="coupon-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/dianyuan.png"></image>
+          </view>
+          <view class="coupon-text">店员列表</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+      <view class="row" bindtap="goBindMobile">
+        <view class="left">
+          <view class="coupon-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/bindmobile.png"></image>
+          </view>
+          <view class="coupon-text">绑定手机</view>
+        </view>
+        <view class="right">
+          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

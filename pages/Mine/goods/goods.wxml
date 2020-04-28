@@ -1,0 +1,122 @@
+<!--index.wxml-->
+<view class="container" style='padding-bottom:{{btuBottom}}'>
+  <!-- 轮播图 -->
+  <view class="banner">
+    <swiper wx:if="{{goodsInfo.many_pic}}" indicator-dots="true" autoplay="true" class="swiper">
+      <block wx:for="{{goodsInfo.many_pic}}" wx:key="v">
+        <swiper-item class="banner-item" data-id="{{item}}">
+          <image class="item-image" src="{{url}}{{item}}" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- end轮播图 -->
+  <view class="top-price">
+    <view class="goods-price">
+      <view class="top-real-price">
+        <text>¥</text>{{goodsInfo.price}}</view>
+      <view class="del-price">
+        <text>¥</text>{{goodsInfo.market_price}}</view>
+    </view>
+    <view class="member-price" wx:if="{{goodsInfo.member_discount < 10}}">
+      <view class="member-desc">星球专享价</view>
+      <view class="member-desc">
+        <block wx:for="{{goodsInfo.hot_num}}" wx:key="unique">
+          <view class="huo-icon">
+            <image style="width: 100%;" mode="widthFix" src="/images/icon/huo.png"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="mainpage">
+    <view class="goods-name">
+      {{goodsInfo.goods_name}}
+    </view>
+    <view class="goods-address">
+      <view class="address-left">
+        <view class="address-text margin_right_20rpx">会员价:¥{{goodsInfo.member_price}} </view>
+        <view class="address-text">成本价:¥{{goodsInfo.cost_price}}</view>
+      </view>
+
+    </view>
+    <view class="goods-detail">
+      <view class="detail-head">详情内容</view>
+      <block wx:for="{{goodsInfo.goods_option}}" wx:key="unique" >
+        <view class="row-detail">
+          <view class="row-head"><text class="dian">.</text>{{index}}</view>
+          <block wx:for="{{item}}"  wx:for-item="arr" >
+            <view class="row-text">
+              <view class="row-cai-left">{{arr.name}}</view>
+              <view class="row-cai-right" wx:if="{{arr.price}}">¥ {{arr.price}}</view>
+            </view>
+          </block>
+        </view>
+      </block>
+
+      <!-- <view class="row-detail">
+        <view class="notice" wx:for="{{goodsInfo.goods_option}}" wx:for-index="index" wx:for-item="item">
+          <view class="row-head">
+            <text class="dian">.</text>{{index}}
+          </view>
+          <block wx:for="{{goodsInfo.rule_use}}"  wx:for="{{item}}" wx:key="" wx:for-item="item1">
+            <view class="jus-spB">
+            <view class="service-desc rule"> {{item1.name}}</view>
+             <view class="service-desc rule">¥ {{item1.price}}</view>
+            </view>
+          </block>
+        </view>
+      </view> -->
+
+      <!-- <view class="row-detail">
+        <rich-text nodes="{{goodsInfo.goods_desc}}"></rich-text>
+        <view class="option_box">
+          <view class="option_title"> 一级标题</view>
+          <view class="option_content">·二级标题</view>
+
+        </view>
+      </view> -->
+    </view>
+    <view class="goods-detail">
+      <view class="detail-head">服务</view>
+      <view class="row-detail">
+        <block wx:for="{{goodsInfo.peculiar}}" wx:key="unique">
+          <view class="service">
+            <view class="service-detail">
+              <view class="service-icon">
+                <image style="width: 25rpx;height: 25rpx;" mode="scaleToFill" src="/images/icon/xuanzhong.png"></image>
+              </view>
+              <view class="service-text">{{item.peculiar_name}}</view>
+            </view>
+            <view class="service-desc" wx:if="{{item.peculiar_desc}}">{{item.peculiar_desc}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="goods-detail">
+      <view class="detail-head">购买须知</view>
+      <view class="row-detail">
+        <view class="notice">
+          <view class="row-head">
+            <text class="dian">.</text>有效期
+          </view>
+          <view class="service-desc rule">
+            购买{{goodsInfo.expiry}}天有效
+          </view>
+        </view>
+        <view class="notice">
+          <view class="row-head">
+            <text class="dian">.</text>使用规则
+          </view>
+          <block wx:for="{{goodsInfo.rule_use}}" wx:key="unique">
+            <view class="service-desc rule">
+              {{item}}
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

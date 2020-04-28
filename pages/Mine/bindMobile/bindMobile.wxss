@@ -1,0 +1,39 @@
+page {
+  background: #fff;
+}
+
+.backFFF {
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile {
+  width: 100%;
+  /* text-align: right; */
+}
+
+.code {
+  padding: 10rpx 20rpx;
+  background: #48B64D;
+  border-radius: 50rpx;
+  color: #fff;
+}
+
+.codenoselect {
+  padding: 10rpx 20rpx;
+  background: #999;
+  border-radius: 50rpx;
+}
+
+.xiugai {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  padding: 10rpx 20rpx;
+  background: #fd7611;
+  border-radius: 50rpx;
+  color: #fff;
+}

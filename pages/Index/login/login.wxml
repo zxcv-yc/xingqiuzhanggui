@@ -1,0 +1,15 @@
+<view class="container home-container">
+    <view class="logo"><image style="width: 100%;" mode="widthFix" src="/images/index/login.png"></image></view>
+    <view class="row">
+      <view class="logo-icon"><image style="width: 100%;" mode="widthFix" src="/images/icon/account.png"></image></view>
+      <view class="input"><input bindinput="bindaccountInput" placeholder="请输入账号" /></view>
+    </view>
+    <view class="row">
+      <view class="logo-icon"><image style="width: 100%;" mode="widthFix" src="/images/icon/password.png"></image></view>
+      <view class="input marginright20"><input password bindinput="bindpassInput" placeholder="请输入密码" /></view>
+      <view class="nomima" bindtap="toxiugai">忘记密码</view>
+    </view>
+    <view class="btn"  bindtap="login">登录</view>
+    <view class="login">仅限平台商家登录,查看商家的订单明细</view>
+</view>
+<view class="bottom"><button open-type="contact" bindcontact="handleContact">登录有问题,联系客服</button></view>

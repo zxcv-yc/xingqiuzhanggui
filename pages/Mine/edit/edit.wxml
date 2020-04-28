@@ -1,0 +1,15 @@
+<view class="container home-container">
+    <view class="row">
+      <view class="left">店员名字</view>
+      <view class="right"><input bindinput="bindnameInput" placeholder="{{name}}" /></view>
+    </view>
+    <view class="row">
+      <view class="left">店员账号</view>
+      <view class="right"><input bindinput="bindaccountInput" placeholder="{{account}}" /></view>
+    </view>
+    <view class="row">
+      <view class="left">店员密码</view>
+      <view class="right"><input bindinput="bindpasswordInput" placeholder="{{password}}" /></view>
+    </view>
+    <view class="btn"  bindtap="confirm">确认</view>
+</view>

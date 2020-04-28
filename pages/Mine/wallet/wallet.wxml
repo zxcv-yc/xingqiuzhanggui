@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="header">
+      <view class="info">
+        <view class="left">
+          <view class="btext">当前余额</view>
+          <view class="bmoney"><text>500</text>元</view>
+        </view>
+        <view class="right">
+          <view class="ant" bindtap="wallet">提现</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="detail">钱包明细</view>
+      <view class="desc">
+        <view class="row">
+          <view class="rleft">
+            <view class="name">商品名称</view>
+            <view class="time">10:20 120</view>
+          </view>
+          <view class="rright">+100</view>
+        </view>
+        <view class="row">
+          <view class="rleft">
+            <view class="name">商品名称</view>
+            <view class="time">10:20 120</view>
+          </view>
+          <view class="rright">+100</view>
+        </view>
+      </view>
+      
+    </view>
+  
+  </view>
+        
+</view>

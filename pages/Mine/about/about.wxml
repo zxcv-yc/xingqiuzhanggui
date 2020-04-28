@@ -1,0 +1,4 @@
+<view class="container home-container">
+    <view class="logo"><image style="width: 100%;" mode="widthFix" src="/images/index/login.png"></image></view>
+    <view class="about"><rich-text nodes="{{info}}">12313</rich-text></view>
+</view>

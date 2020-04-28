@@ -1,0 +1,47 @@
+<form bindsubmit="submitData">
+	<view class="container home-container">
+		<view class="row">
+			<view class="left">优惠劵名称：</view>
+			<view class="right"><input  value="{{bank_name}}" placeholder="请输入优惠劵名称" name="name" /></view>
+		</view>
+		<view class="row">
+			<view class="left">达标金额：</view>
+			<view class="right"><input value="{{bank_no}}" placeholder="请输入达标金额" name="man_amount" type="number" /></view>
+		</view>
+		<view class="row">
+			<view class="left"><text space="ensp">满减金额：</text></view>
+			<view class="right"><input value="{{real_name}}" placeholder="请输入满减金额" name="amount" type="number" /></view>
+		</view>
+		<view class="row">
+			<view class="left"><text space="ensp">到期时间(天)：</text></view>
+			<view class="right"><input  value="{{real_name}}" placeholder="请输入到期时间" name="use_time" type="number" /></view>
+		</view>
+		<view class="row">
+			<view class="left"><text space="ensp">开始领取时间：</text></view>
+			<view class="right">
+				<picker mode="date" value="{{sdate}}" start="2020-4-20" end="2021-09-01" bindchange="bindSDateChange" name="get_starttime">
+					<view class="picker">
+						{{sdate?sdate:'请选择'}}
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="row">
+			<view class="left"><text space="ensp">截止领取时间：</text></view>
+			<view class="right">
+				<picker mode="date" value="{{edate}}" start="2020-4-20" end="2021-09-01" bindchange="bindEDateChange" name="get_endtime">
+					<view class="picker">
+						{{edate?edate:'请选择'}}
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="row jus-spB">
+			<view class="switch_left"><text space="ensp">是否推荐给未领取用户：</text></view>
+			<view class="switch_right">
+				<switch checked="{{switch1Checked}}" bindchange="switch1Change" color="#FE5512" class="switch_" name="is_show" />
+			</view>
+		</view>
+	</view>
+	<button class="nextBtn" form-type="submit">下一步</button>
+</form>

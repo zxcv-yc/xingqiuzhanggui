@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/Index/index/index",
+    "pages/Index/waitOrder/waitOrder",
+    "pages/Index/finish/finish",
+    "pages/Index/hexiao/hexiao",
+    "pages/Index/changepassword/changepassword",
+    "pages/Mine/wallet/wallet",
+    "pages/Mine/index/index",
+    "pages/Mine/about/about",
+    "pages/Mine/order/order",
+    "pages/Mine/edit/edit",
+    "pages/Mine/info/info",
+    "pages/Mine/bankinfo/bankinfo",
+    "pages/Mine/record/record",
+    "pages/Mine/list/list",
+    "pages/Mine/manage/manage",
+    "pages/Mine/goods/goods",
+    "pages/Mine/bindMobile/bindMobile",
+    "pages/Index/business/business",
+    "pages/Mine/withdraw/withdraw",
+    "pages/Index/login/login",
+    "pages/Mine/test/test",
+    "pages/Mine/startWithdraw/startWithdraw",
+    "pages/Mine/withdrawalsRecord/withdrawalsRecord",
+    "pages/Mine/couponManagement/couponManagement",
+    "pages/Mine/addCoupon/addCoupon",
+    "pages/Mine/suitableGoods/suitableGoods",
+    "pages/Mine/withdrawInfo/withdrawInfo",
+    "pages/Mine/withdrawalRules/withdrawalRules",
+    "pages/Mine/wxAuthorize/wxAuthorize"
+  ],
+  "window": {
+    "navigationBarTitleText": "星球掌柜",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#fe6b10",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Index/index/index",
+        "iconPath": "images/icon/index_icon.jpg",
+        "selectedIconPath": "images/icon/index_icon_yes.jpg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Mine/index/index",
+        "iconPath": "images/icon/mine.jpg",
+        "selectedIconPath": "images/icon/mine_yes.jpg",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#fe5512",
+    "color": "#8c8c8c",
+    "borderStyle": "white",
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于导航使用"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

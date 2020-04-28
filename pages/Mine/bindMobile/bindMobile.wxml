@@ -1,0 +1,14 @@
+<view class="backFFF">
+  <!-- <view class="mobile-text">手机号</view> -->
+  <input class="mobile" placeholder="{{oldmobile ? oldmobile : '请输入手机号'}}" bindinput="changemobile"></input>
+</view>
+
+<view class="backFFF">
+  <input class="input-text" placeholder="请输入验证码" bindinput="changecode"></input>
+  <view class="code" bindtap='verification' wx:if="{{reSend}}">点击获取</view>
+  <view wx:else class="codenoselect">{{second}}后可再次发送</view>
+</view>
+
+<view class="backFFF">
+  <view class="xiugai" bindtap="xiugai">修改</view>
+</view>

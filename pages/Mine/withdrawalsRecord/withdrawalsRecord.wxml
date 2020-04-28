@@ -1,0 +1,27 @@
+<view class="record_list">
+  <view class="record_item jus-spB" wx:for="{{list}}" wx:key="this">
+    <view class="record_left">
+      <view class="record_item_title">
+        {{item.withdraw_type === 1?'微信钱包':'银行卡'}}提现
+      </view>
+      <view class="record_item_time">
+        提现金额：¥{{item.amount}}
+      </view>
+      <view class="record_item_time">
+        手续费：¥{{item.cost}}
+      </view>
+      <view class="record_item_time">
+        实际到账：¥{{item.real_amount}}
+      </view>
+    </view>
+    <view class="record_right">
+      <!-- <view class="record_item_amount">-200</view> -->
+      <view class="record_item_status" wx:if="{{item.status===1}}">审核中</view>
+      <view class="record_item_status" wx:if="{{item.status===0}}">提现失败</view>
+      <view class="record_item_status" wx:if="{{item.status===2}}">已到账</view>
+      <view class="record_item_status" wx:if="{{item.status===3}}">审核成功</view>
+    </view>
+  </view>
+
+  
+</view>

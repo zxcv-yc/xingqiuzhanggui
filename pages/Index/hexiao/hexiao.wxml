@@ -1,0 +1,5 @@
+<view class="container home-container">
+    <view class="input"><input bindinput="bindCodeInput" placeholder="请输入核销码" /></view>
+    
+    <view class="btn" bindtap="hexiao">确认</view>
+</view>

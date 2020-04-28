@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="nodata" wx:if="{{list.length == 0}}">
+      暂无数据
+    </view>
+    <view class="list" wx:if="{{list.length > 0}}">
+      <block wx:for="{{list}}">
+      <view class="row">
+        <view class="head">
+          <view class="left">{{item.goods.goods_name}}</view>
+          <view class="right">待消费</view>
+        </view>
+        <view class="content">
+          <view class="pic"><image style="width: 100%;" mode="widthFix" src="{{url}}{{item.pic}}"></image></view>
+          <view class="info">
+            <view class="desc">下单时间:{{item.add_time}}</view>
+            <view class="desc" >支付时间：{{item.pay_time}}</view>
+            <view class="desc">共计{{item.num}}件：{{item.real_amount}}</view>
+          </view>
+        </view>
+        <view class="btn">
+          <view class="confirm" data-order_id="{{item.id}}" bindtap="confirm">去核销</view>
+        </view>
+      </view>
+      </block>
+     
+    </view>
+  
+  </view>
+        
+</view>

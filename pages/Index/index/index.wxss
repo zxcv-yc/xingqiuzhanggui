@@ -1,0 +1,38 @@
+.row{
+	margin: 30rpx 30rpx 0;
+	position: relative;
+}
+.main{
+	position: absolute;
+	display: flex;
+	top: 80rpx;
+	left: 150rpx;
+	font-size: 32rpx;
+}
+.icon{
+	width: 45rpx;
+	margin-top: 7rpx;
+}
+.icon-text{
+	margin-top: 5rpx;
+	margin-left: 15rpx;
+}
+button{
+	width: 80%;
+	font-size: 30rpx;
+	margin: 50rpx auto;
+	height: 70rpx;
+	line-height: 70rpx;
+	border-radius: 35rpx;
+	text-align: center;
+	color: #fff;
+	background: #fd7611;
+}
+.button-hover{
+	color: #666;
+	background: none;
+}
+button::after {
+  border: none;
+  background: none;
+}

@@ -1,0 +1,51 @@
+.container{
+	padding: 0 25rpx;
+}
+.row{
+	display: flex;
+	font-size: 28rpx;
+	color: #333;
+	padding: 25rpx 0;
+	border-bottom: 1rpx solid #F3F3F3;
+}
+.row:first-child .left{
+	padding-top: 0;
+}
+.tip{
+	display: flex;
+	padding-top: 20rpx;
+}
+.shuoming{
+	margin-left: 15rpx;
+	padding-top: 6rpx;
+	font-size: 24rpx;
+	color: #999999;
+}
+.left{
+	padding-top: 5rpx;
+}
+.right{
+	margin-left: 20rpx;
+}
+.right input{
+	color: #666;
+	width: 100%;
+}
+.right.total{
+	color: #FE5512;
+}
+.row.shuo{
+	color: #FE5512;
+	font-size: 24rpx;
+}
+.btn{
+	width: 100%;
+	font-size: 32rpx;
+	margin: 60rpx auto;
+	height: 80rpx;
+	line-height: 80rpx;
+	border-radius: 40rpx;
+	text-align: center;
+	color: #fff;
+	background: #FE5512;
+}

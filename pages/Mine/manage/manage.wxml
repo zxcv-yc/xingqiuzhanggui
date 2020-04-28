@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="nodata" wx:if="{{list.length == 0}}">
+    暂无数据
+  </view> 
+  <view class="list"  >
+      <view class="desc">
+        <block wx:for="{{list}}">
+          <view class="row">
+            <view class="left">
+              <view class="name" >{{item.name}}</view>
+            </view>
+            <view class="right">
+              <view class="edit" data-id="{{item.id}}" bindtap="editManage">编辑</view>
+              <view class="edit del" data-id="{{item.id}}" bindtap="delManage" >删除</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      
+    </view>    
+</view>
+<view class="zhan"></view>
+<view class="bottom" bindtap="addManage">
+    <view class="add"> 添加店员</view>
+  </view>

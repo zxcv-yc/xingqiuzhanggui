@@ -1,0 +1,22 @@
+<view class="container home-container">
+    <view class="tip">
+      <view class="icon"><image style="width: 30rpx;height: 30rpx;" mode="scaleToFill" src="/images/mine/tip1.png"></image></view>
+      <view class="shuoming">{{desc}}</view>
+    </view>
+    <view class="row shuo">
+      提示：提现之前，请核实您的个人信息是否正确，以免耽误您的提现申请!
+    </view>
+    <view class="row">
+      <view class="left">银行名称：</view>
+      <view class="right"><input bindinput="bindBankNameInput" value="{{bank_name}}" placeholder="请输入银行名称" /></view>
+    </view>
+    <view class="row">
+      <view class="left">银行卡号：</view>
+      <view class="right"><input bindinput="bindBankNoInput" value="{{bank_no}}" placeholder="请输入银行卡号" /></view>
+    </view>
+    <view class="row">
+      <view class="left"><text space="ensp">姓   名：</text></view>
+      <view class="right"><input bindinput="bindRealNameInput" value="{{real_name}}" placeholder="请输入银行卡持有人姓名" /></view>
+    </view>
+    <view class="btn"  bindtap="withdraw">确定</view>
+</view>

@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="total-text">门店销售总额 (元)</view>
+    <view class="total-money">{{total}}</view>
+    <view class="nav">
+      <view class="one">
+        <view class="msg-text">当日销售总额</view>
+        <view class="msg-money">{{day}}</view>
+      </view>
+      <view class="one zhong">
+        <view class="msg-text">本周销售总额</view>
+        <view class="msg-money">{{week}}</view>
+      </view>
+      <view class="one you">
+        <view class="msg-text">当月销售总额</view>
+        <view class="msg-money">{{month}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="search">
+    <view class="srow">
+      <view class="start">开始时间</view>
+      <picker mode="date" value="{{date}}" bindchange="bindStartChange">
+        <view class="picker">
+          {{start}}
+        </view>
+      </picker>
+    </view>
+    <view class="srow sright">
+      <view class="start">结束时间</view>
+      <picker mode="date" value="{{date}}" bindchange="bindEndChange">
+        <view class="picker">
+          {{end}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="nodata" wx:if="{{list.length == 0}}">
+    暂无数据
+  </view> 
+  <view class="list" wx:if="{{list.length > 0}}" >
+      <view class="desc">
+        <block wx:for="{{list}}">
+          <view class="row">
+            <view class="rleft">
+              <view class="name">{{item.title}}</view>
+              <view class="time">{{item.pay_time}}</view>
+            </view>
+            <view class="rright">+{{item.real_amount}}</view>
+          </view>
+        </block>
+      </view>
+      
+    </view>    
+</view>

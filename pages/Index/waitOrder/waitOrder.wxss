@@ -1,0 +1,77 @@
+.index-nav{
+	color: #fff;
+	display: flex;
+	padding: 20rpx 30rpx;
+	background: #fe6b10;
+	font-size: 30rpx;
+}
+.nav-item{
+	flex: 1;
+	text-align: center;
+}
+.nav-line{
+	height: 3rpx;
+	width: 60rpx;
+	margin: 5rpx auto;
+	background: #fff;
+}
+.list{
+	padding: 0 20rpx 30rpx;
+}
+.row{
+	padding: 30rpx 20rpx;
+	margin-top: 20rpx;
+	border-radius: 10rpx;
+	font-size: 28rpx;
+	color: #666;
+	box-shadow:0rpx 0rpx 4rpx 4rpx #f7f6f6;
+}
+.head{
+	overflow: hidden;
+	padding-bottom: 20rpx;
+	border-bottom: 1rpx solid #eaeaea;
+}
+.left{
+	font-size: 30rpx;
+	color: #000;
+	float: left;
+}
+.right{
+	float: right;
+}
+.content{
+	margin-top: 20rpx;
+	display: flex;
+}
+.pic{
+	width: 150rpx;
+}
+.info{
+	margin-left: 15rpx;
+}
+.desc{
+	margin-top: 10rpx;
+}
+.btn{
+	overflow: hidden;
+	font-size: 28rpx;
+	color: #999;
+	border-top: 1rpx solid #eaeaea;
+	margin-top: 15rpx;
+	padding-top: 15rpx;
+	text-align: center;
+}
+.payname{
+	float: left;
+}
+.pay{
+	float: right;
+}
+.confirm{
+	display: inline-block;
+	color: #fff;
+	font-size: 32rpx;
+	padding: 10rpx 20rpx;
+	background: #fe6b10;
+	border-radius: 10rpx;
+}

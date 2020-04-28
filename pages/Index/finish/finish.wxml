@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="paybg">
+    <view class="finish">
+      <image style="width: 100%;height: 150rpx;" mode="scaleToFill" src="/images/icon/select-yes.png"></image>
+    </view>
+    <view class="paydesc">恭喜您订单核销成功</view>
+    <view class="payinfo" bindtap="goBack">返回</view>
+    <view class="order-info">
+      <view class="line"></view>
+      <view class="orderdesc">订单信息</view>
+      <view class="line"></view>
+    </view>
+  </view>
+  <view class="order">
+    <view class="goods-name">{{info.shop_name}}</view>
+    <view class="goods">
+      <view class="goods-left">
+          <image style="width: 100%;height: 150rpx;" mode="scaleToFill" src="{{url}}{{goods.pic}}"></image>
+        </view>
+      <view class="goods-right">
+        <view class="goods-desc">
+          {{goods.goods_name}}
+        </view>
+        <view class="goods-price">x{{info.num}}</view>
+        <view class="goods-price">{{goods.price}}</view>
+      </view>
+    </view>
+    
+  </view>
+  <view class="price-info">
+    <view class="row">
+      <view class="left">订单总价</view>
+      <view class="right">
+        ￥{{info.amount}}
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">红包</view>
+      <view class="right">
+       -￥{{info.coupon_amount}}
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">共{{info.num}}件商品</view>
+      <view class="right">
+        <view class="shifu"><text class="real-pay">实付:</text><text>￥</text>{{info.real_amount}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="price-info">
+    <view class="row">
+      <view class="left">订单编号</view>
+      <view class="right time">
+        {{info.order_no}}
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">订单时间</view>
+      <view class="right time">
+       {{info.add_time}}
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">消费时间</view>
+      <view class="right time">
+       {{info.finish_time}}
+      </view>
+    </view>
+    <view class="row">
+      <view class="left">客户昵称</view>
+      <view class="right time">
+       {{info.user_name}}
+      </view>
+    </view>
+  </view>
+ 
+</view>

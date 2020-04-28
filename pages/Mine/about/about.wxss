@@ -1,0 +1,10 @@
+.logo{
+	width: 200rpx;
+	margin: 100rpx auto 10rpx;
+}
+.about{
+	padding: 30rpx;
+	font-size: 30rpx;
+	color: #333;
+	line-height: 40rpx;
+}

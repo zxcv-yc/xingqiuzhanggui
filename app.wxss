@@ -1,0 +1,108 @@
+/**公共样式**/
+.container {height: 100%;flex-direction: column;align-items: center;justify-content: space-between;box-sizing: border-box;padding-bottom: 100rpx}
+.bg{background: #ffbb12!important}  /*主题背景色*/
+.tc{color: #ffbb12!important}       /*主题颜色*/
+page{border: 0;margin: 0;padding: 0;background:#fff;font-family:SimHei;font-style: 28rpx;color: #333;}
+input{outline:none; border:none;list-style: none;}
+.disabled{pointer-events: none;color: #999!important}
+button::after{border:none;}
+button{position:relative;display:block;margin:0;box-sizing:border-box;font-size:32rpx;text-align:center;text-decoration:none;line-height: normal;border-radius:3rpx;-webkit-tap-highlight-color:transparent;overflow:hidden;color:#000000;background-color:#F8F8F8;}
+image{height:auto}
+/* 授权弹框 */
+.auth{width: 100%;height: 100%;position:fixed;top: 0; display: flex;justify-content: center; align-items: center;background-color:rgba(0,0,0,0.5);z-index: 2}
+.auth>view{width: 75%;background: #fff; padding: 50rpx 0; border-radius: 10rpx}
+.auth>view>.auth-btn{ height: 100rpx; display: flex;justify-content: center; align-items: center;}
+.auth>view>.auth-btn>button{background: #179B16;width: 70%;line-height: 60rpx;font-size: 28rpx;height: 60rpx;border-radius: 40rpx;border: none;color: #fff}
+.auth>view>.auth-content {text-align: center;width: 90%;margin: 0 auto; line-height: 60rpx;}
+.auth>view>.auth-content>.h3{ font-weight: 700;font-size: 32rpx;color: #555;}
+.auth>view>.auth-content>.t{ font-size: 25rpx;color: #666;}
+
+/* 没有数据 */
+.nodata{height: 80rpx; color: #999; display: block!important; line-height: 80rpx;font-size: 30rpx;text-align: center}
+
+/*遮罩*/
+.zhezhao{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background: #000;
+}
+
+/* 技术支持 */
+.copyright{font-size: 28rpx;color: #ccc;text-align: center;height: 100rpx;line-height: 100rpx}
+
+/* 底部提交按钮 */
+.footer {width:100%;display:flex;justify-content:center;align-items:center;height:300rpx}
+.footer>button {color:#fff;border-radius:10rpx;width:90%;height:80rpx;line-height:80rpx;}
+
+
+/*  */
+
+.jus-spB,
+.jus-start,.jus-center {
+	display: flex;
+	align-items: center;
+}
+
+.jus-spB {
+	justify-content: space-between
+}
+
+.jus-start {
+	justify-content: flex-start;
+}
+.jus-center{
+	justify-content: center;
+}
+.jus-spB-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* iconfont */
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1587982087159'); /* IE9 */
+  src: url('iconfont.eot?t=1587982087159#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('iconfont.woff?t=1587982087159') format('woff'),
+  url('iconfont.ttf?t=1587982087159') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1587982087159#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weixin:before {
+  content: "\e682";
+}
+
+.icon-tishi:before {
+  content: "\e68e";
+}
+
+.icon-iconfontjiantou2:before {
+  content: "\e632";
+}
+
+.icon-zhengzaijinhang:before {
+  content: "\e616";
+}
+
+.icon-bangzhu:before {
+  content: "\e70c";
+}
+
+.icon-jiludanzilishijilu:before {
+  content: "\e61b";
+}
+

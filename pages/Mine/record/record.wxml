@@ -1,0 +1,95 @@
+  <!--index.wxml-->
+<view class="container">
+	<view class="header">
+		<view class="tab_icon_box">
+			<view class="margin_right_40" bindtap="goWithdrawalsRules">
+				<text class="iconfont icon-bangzhu fontsize"></text>
+			</view>
+			<view bindtap="goWithdrawalsRecord">
+				<text class="iconfont icon-jiludanzilishijilu fontsize"></text>
+			</view>
+
+		</view>
+		<view class="nav">
+			<view class="one">
+				<view class="msg-money">{{balance}}</view>
+				<view class="msg-text">未提现</view>
+
+			</view>
+			<view class="one zhong">
+				<view class="msg-money">{{money}}</view>
+				<view class="msg-text">提现中</view>
+
+			</view>
+			<view class="one you">
+				<view class="msg-money">{{overmoney}}</view>
+				<view class="msg-text">已提现</view>
+
+			</view>
+		</view>
+
+	</view>
+	<view class="ongoing_box" wx:if="{{is_withdraw}}"   bindtap="gowithdrawalInfo">
+		<view class="ongoing_left">
+			<text class="iconfont icon-zhengzaijinhang"></text>
+			<text class="ongoing_left_text">您有一笔提现正在进行中</text>
+		</view>
+		<view class="ongoing_right">
+			<text class="iconfont icon-iconfontjiantou2"></text>
+		</view>
+	</view>
+	<view class="nodata" wx:if="{{listData.length == 0}}">
+		暂无数据
+	</view>
+
+	<view class="list">
+		<!-- 	<view class="list" wx:if="{{list.length > 0}}"> -->
+		<checkbox-group bindchange="checkboxChange">
+			<view class="list_card_item" wx:for="{{listData}}" wx:key="this">
+				<view class="jus-spB">
+					<view class="jus-start">
+						<view class="card_round_img">
+							<image src="{{item.avatar_url}}" mode="aspectFit"></image>
+						</view>
+						<view class="card_user_name">{{item.nickname}}</view>
+					</view>
+					<view>
+						<checkbox value='{{item.id}}' checked="{{item.checked}}" color="#fe5512"></checkbox>
+					</view>
+				</view>
+				<view class="jus-spB card_content">
+					<view class="card_info_box jus-spB-col">
+						<view class="">{{item.goods_name}}</view>
+						<view class="text_info">
+							<view>入驻单价：¥{{item.cost_price}},购买数量： {{item.num}}</view>
+							<view>优惠金额：¥{{item.coupon_amount}}</view>
+							<view>实收金额：¥{{item.paidup_price}}</view>
+						</view>
+						<view class="jus-spB">
+							<view class="text-999">
+								<text class="margin_right">{{item.add_time}}</text>
+								<!-- <text>10:00</text> -->
+							</view>
+							<!-- <view class="text-999">{{item.cost_price}}</view> -->
+						</view>
+					</view>
+					<view class="card_img">
+						<image src="{{ url + item.pic}}"></image>
+					</view>
+				</view>
+			</view>
+
+		</checkbox-group>
+	</view>
+	<view class="bottom_bar jus-spB" wx:if="{{listData.length}}">
+		<view>
+			<checkbox value="all" bindtap="allChecked" checked="{{isAll}}" color="#fe5512">全选</checkbox>
+		</view>
+		<view>
+			<text>提现金额：</text>
+			<text>¥ {{amount}}</text>
+			<text class="bottom_bar_btn" bindtap="goStartWithdraw">提现</text>
+		</view>
+	</view>
+
+</view>

@@ -1,0 +1,9 @@
+<!--pages/Mine/withdrawalRules/withdrawalRules.wxml-->
+<view class="container">
+  <view class="title">
+    提现规则
+  </view>
+  <view class="content_text">
+    {{rules}}
+  </view>
+</view>

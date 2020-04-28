@@ -1,0 +1,31 @@
+/* pages/Mine/withdrawalsRecord/withdrawalsRecord.wxss */
+
+page {
+  background-color: #f3f3f3;
+}
+
+.record_list {
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+
+.record_item {
+  padding: 20rpx 0rpx;
+  border-bottom: 1rpx solid rgba(238, 238, 238, 0.932);
+  margin-bottom: 20rpx;
+}
+
+.record_item_time {
+  color: #999;
+  font-size: 26rpx;
+  margin-top: 16rpx;
+}
+
+.record_item_amount {
+  font-size: 38rpx;
+  color: #fe5512;
+}
+
+.record_item_status {
+  font-size: 28rpx;
+}

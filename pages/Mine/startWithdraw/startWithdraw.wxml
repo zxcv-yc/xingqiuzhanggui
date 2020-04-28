@@ -1,0 +1,34 @@
+<view class="amount_box">
+  ¥ {{amount}} 元
+</view>
+<view class="jus-spB type_header border_bottom">
+  <view>转出方式</view>
+  <view class="text-FE5512" bindtap="goWithdrawalsRules">转出方式及限额说明</view>
+</view>
+<view class="type_box">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <view class="type_item border_bottom">
+      <view class="type_item_title">
+        <radio class="radio" value="1" checked="{{item.checked}}" color="#fe5512">
+          <text>转出到微信余额</text>
+        </radio>
+      </view>
+      <view class="type_item_info">
+        预计
+        <text class="text-FE5512">一天内到账</text>，每日限额2万元(如有问题请咨询平台客服)，0.6%手续费
+      </view>
+    </view>
+    <view class="type_item border_bottom">
+      <view class="type_item_title">
+        <radio class="radio" value="2" checked="{{item.checked}}" color="#fe5512">
+          <text>转出到银行卡</text>
+        </radio>
+      </view>
+      <view class="type_item_info">
+        预计
+        <text class="text-FE5512">两天后23:59前到账</text>，无限额，0.7%手续费
+      </view>
+    </view>
+  </radio-group>
+  <view class="botton_" bindtap="startWidthDraw">确认提现</view>
+</view>

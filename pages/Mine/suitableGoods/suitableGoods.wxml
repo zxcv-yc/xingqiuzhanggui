@@ -1,0 +1,33 @@
+<view class="content">
+	<view class="list">
+		<checkbox-group bindchange="checkboxChange">
+			<view class="list_card_item" wx:for="{{listData}}" wx:key="this">
+				<!-- <view class="list_card_item" > -->
+
+				<view class="jus-spB card_content">
+					<view class="card_info_box jus-spB-col">
+						<view class="jus-start">
+							<checkbox value='{{item.id}}' checked="{{item.checked}}" color="#fe5512"></checkbox>
+							<view class="">{{item.goods_name}}</view>
+						</view>
+						<view class="text_info ellipsis_2">{{item.rule_use}}</view>
+					</view>
+					<view class="card_img">
+						<image src="{{ url+item.pic}}"></image>
+					</view>
+				</view>
+			</view>
+		</checkbox-group>
+	</view>
+
+</view>
+<view class="bottom_bar jus-spB">
+	<view>
+		<checkbox value="all" bindtap="allChecked" checked="{{isAll}}" color="#fe5512">全选</checkbox>
+	</view>
+	<view>
+		<!-- <text>提现金额：</text>
+		<text>¥ {{amount}}</text> -->
+		<text class="bottom_bar_btn" bindtap="addCoupon">确定</text>
+	</view>
+</view>

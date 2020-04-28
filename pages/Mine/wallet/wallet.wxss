@@ -1,0 +1,64 @@
+.mian{
+	font-size: 25rpx;
+}
+.header{
+	padding: 30rpx 40rpx 0; 
+	background: #E6E6E6;
+}
+.info{
+	background: #1E1E1E;
+	border-radius: 10rpx 10rpx 0 0;
+	overflow: hidden;
+}
+.left{
+	color: #E7DEB7;
+	float: left;
+	padding: 20rpx 0 15rpx 50rpx;
+}
+.right{
+	float: right;
+	padding: 70rpx 30rpx 15rpx 0;
+}
+.bmoney{
+	margin-top: 15rpx;
+}
+.bmoney text{
+	font-size: 50rpx;
+}
+.ant{
+	background: #fff;
+	display: inline-block;
+	padding: 0 25rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	border-radius: 25rpx;
+	color: #333;
+}
+.list{
+	padding: 0 20rpx;
+	color: #000;
+}
+.detail{
+	padding: 20rpx 0;
+	border-bottom: 1rpx solid #E6E6E6;
+	font-weight: bold;
+	font-size: 30rpx;
+}
+.row{
+	overflow: hidden;
+	border-bottom: 1rpx solid #E6E6E6;
+}
+.rleft{
+	padding: 15rpx 0;
+	float: left;
+}
+.time{
+	color: #999999;
+	margin-top: 5rpx;
+	font-size: 24rpx;
+}
+.rright{
+	float: right;
+	padding-top: 30rpx;
+	color: #FE5512;
+}

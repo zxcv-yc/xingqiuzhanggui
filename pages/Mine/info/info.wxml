@@ -1,0 +1,39 @@
+<view class="container home-container">
+    <view class="row">
+      <view class="left">店铺名称</view>
+      <view class="right">{{info.shop_name}}</view>
+    </view>
+    <view class="row">
+      <view class="left img">请上传店铺照片</view>
+      <view class="right" bindtap='uploadDetailImage'><image style="width: 150rpx;height: 120rpx;" mode="scaleToFill" src="{{url}}{{pic}}"></image></view>
+    </view>
+    <view class="row">
+      <view class="left">店铺简介</view>
+      <view class="right"><input bindinput="binddescInput" placeholder="{{desc}}" /></view>
+    </view>
+    <!-- <view class="row">
+      <view class="left">店铺介绍</view>
+      <view class="right"><textarea bindinput="bindcontentInput" >{{content}}</textarea></view>
+    </view> -->
+    <view class="row">
+      <view class="left">营业时间</view>
+      <view class="right"><input bindinput="bindtimeInput" placeholder="{{business_work_time}}" /></view>
+    </view>
+    <view class="row">
+      <view class="left">省市区</view>
+      <picker mode="region" class="right" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}{{region[1]}}{{region[2]}}
+        </view>
+      </picker>
+    </view>
+    <view class="row">
+      <view class="left">店铺地址</view>
+      <view class="right"><input bindinput="bindaddressInput" placeholder="{{address}}" /></view>
+    </view>
+    <view class="row">
+      <view class="left">店铺电话</view>
+      <view class="right"><input bindinput="bindmobileInput" placeholder="{{mobile}}" /></view>
+    </view>
+    <view class="btn"  bindtap="login">修改</view>
+</view>

@@ -1,0 +1,384 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"preloadBackgroundData": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.3",
+	"appid": "wx933b7dc0592ad6d9",
+	"projectname": "%E6%98%9F%E7%90%83%E6%8E%8C%E6%9F%9C",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 35,
+			"list": [
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/activity/activityDetails/activityDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "weeks",
+					"pathName": "pages/activity/weeks/weeks",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "weeks",
+					"pathName": "pages/activity/activityDetails/activityDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "share",
+					"pathName": "pages/Share/share/share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "share",
+					"pathName": "pages/Share/shareDetails/shareDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Activity/activityDetails/activityDetails",
+					"query": "guid=780ur8934735655555",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Activity/introduce/introduce",
+					"query": "guid=780ur8934735655555",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Activity/weeks/weeks",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Activity/activityDetails/activityDetails",
+					"query": "guid=645746374",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Share/release/release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Share/share/share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Share/shareDetails/shareDetails",
+					"query": "guid=555",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Members/index/index",
+					"query": "guid=555",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityDetails",
+					"pathName": "pages/Members/membersInfo/membersInfo",
+					"query": "guid=555",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/membersInfo/membersInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/myactivity/myactivity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/mypoint/mypoint",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/myranking/myranking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/myshare/myshare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Share/release/release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Activity/activityDetails/activityDetails",
+					"query": "guid=645746374",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/myactivity/myactivity",
+					"query": "guid=645746374",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/index/index",
+					"query": "guid=645746374",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/mypoint/mypoint",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/myranking/myranking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/index/index",
+					"query": "pages/Activity/sign/sign",
+					"scene": null
+				},
+				{
+					"id": 28,
+					"name": "1",
+					"pathName": "pages/Activity/sign/sign",
+					"query": "guid=645746374",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Share/shareDetails/shareDetails",
+					"query": "guid=20190705034653890",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Share/shareDetails/shareDetails",
+					"query": "guid=20190705034616136",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/myranking/myranking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/Members/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 33,
+					"name": "1",
+					"pathName": "pages/Activity/activityDetails/activityDetails",
+					"query": "top_guid=20190708090733318",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/index/index",
+					"query": "top_guid=20190708090733318",
+					"scene": null
+				},
+				{
+					"id": 35,
+					"name": "修改密码",
+					"pathName": "pages/Index/changepassword/changepassword",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 36,
+					"name": "绑定手机",
+					"pathName": "pages/Mine/bindMobile/bindMobile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "钱包",
+					"pathName": "pages/Mine/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 38,
+					"name": "开始提现",
+					"pathName": "pages/Mine/startWithdraw/startWithdraw",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠劵管理",
+					"pathName": "pages/Mine/couponManagement/couponManagement",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "适用商品",
+					"pathName": "pages/Mine/suitableGoods/suitableGoods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提现",
+					"pathName": "pages/Mine/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/Mine/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "审核商品详情",
+					"pathName": "pages/Mine/goods/goods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "审核列表",
+					"pathName": "pages/Mine/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/Mine/index/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,16 @@
+/* pages/Mine/withdrawalRules/withdrawalRules.wxss */
+
+.container {
+  padding: 30rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 30rpx
+}
+.content_text{
+  font-size: 30rpx;
+  color: #666;
+}

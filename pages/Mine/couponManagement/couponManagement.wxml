@@ -1,0 +1,21 @@
+<view class="content">
+	<view class="coupon_rule">
+		<text class="iconfont icon-tishi"></text>
+		<text>优惠劵规则，</text>
+		<text class="text-FE5512" bindtap="goCouponRule">点击查看</text>
+
+	</view>
+	<view class="coupon_list " wx:if="{{couponList.length}}">
+		<view class="coupon_item jus-spB" wx:for="{{couponList}}" wx:key="this">
+			<view class="coupon_item_info ">
+				<view class="coupon_item_name ">{{item.name}}</view>
+				<view class="coupon_item_rule ">满{{item.man_amount}} - {{item.amount}}优惠劵</view>
+			</view>
+			<view class="coupon_item_operate jus-center" bindtap="deleteCoupon" data-id="{{item.id}} ">
+				<image src="../../../images/mine/delete.png" class="delete_img" mode="widthFix"></image>
+			</view>
+		</view>
+	</view>
+	<view class="noData" wx:else>暂无优惠劵~~</view>
+</view>
+<view class="addCouponBtn" bindtap="goAddCoupon">添加优惠劵</view>

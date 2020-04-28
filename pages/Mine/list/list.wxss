@@ -1,0 +1,41 @@
+.advantage-list{
+	padding-bottom: 20rpx;
+}
+
+.advantage{
+	display: flex;
+	margin: 20rpx;
+	padding: 20rpx;
+	border-bottom:  1rpx solid #eaeaea;
+	box-shadow:0rpx 0rpx 4rpx 4rpx #f7f6f6;
+}
+.advantage-img{
+	width: 150rpx;
+}
+.advantage-text{
+	flex: 1;
+	margin: 0 15rpx 0 30rpx;
+}
+.advantage-btn{
+	width: 200rpx;
+	text-align: center;
+	font-size: 28rpx;
+}
+.pass{
+	height: 50rpx;
+	line-height: 50rpx;
+	background:  #fe5512;
+	color: #fff;
+	border-radius: 25rpx;
+	margin-top: 15rpx;
+}
+.goods-price{
+	margin-top: 60rpx;
+	color: #fe5512;
+}
+.goods-price text{
+	font-size: 25rpx;
+}
+.color_orange{
+  color: #fe5512;
+}

@@ -1,0 +1,134 @@
+.finish{
+	width: 150rpx;
+	margin: 100rpx auto 0;
+}
+.paybg{
+	text-align: center;
+	font-size: 28rpx;
+}
+.paydesc{
+	color: #333;
+	margin-top: 15rpx;
+}
+.payinfo{
+	width: 300rpx;
+	height: 60rpx;
+	margin: 50rpx auto;
+	background: #fe5512;
+	border-radius:30rpx;
+	line-height: 60rpx;
+	color: #fff;
+}
+.order-info{
+	margin: 0 30rpx;
+	display: flex;
+}
+.line{
+	flex: 1;
+	height: 2rpx;
+	margin-top: 15rpx;
+	background:#dddddd; 
+}
+.orderdesc{
+	width: 150rpx;
+	text-align: center;
+}
+.order{
+	background: #fff;
+	border:1rpx solid #fdfdfd;
+	margin: 40rpx 30rpx 30rpx;
+	border-radius: 15rpx;
+	padding: 20rpx 20rpx 15rpx;
+	box-shadow:0rpx 0rpx 4rpx 4rpx #f7f6f6;
+}
+.goods-name{
+	font-size: 30rpx;
+	font-weight: bold;
+	padding-bottom: 20rpx;
+	border-bottom: 1rpx solid #eaeaea;
+}
+.goods{
+	display: flex;
+	font-size: 28rpx;
+	color: #333;
+}
+.goods-left{
+	padding: 5rpx 0;
+	width: 150rpx;
+}
+.goods-left image{
+	border-radius: 10rpx;
+}
+.goods-right{
+	flex: 1;
+	margin-left: 15rpx;
+	padding-top: 15rpx;
+}
+.goods-price{
+	margin-top: 15rpx;
+}
+.row{
+	padding: 20rpx 0;
+	overflow: hidden;
+	font-size: 28rpx;
+	color: #333;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+	display: flex;
+}
+.shifu{
+	color: #fe5512;
+	font-size: 32rpx;
+}
+.price-info{
+	border:1rpx solid #fdfdfd;
+	margin: 10rpx 30rpx 30rpx;
+	border-radius: 15rpx;
+	padding: 20rpx 20rpx 15rpx;
+	box-shadow:0rpx 0rpx 4rpx 4rpx #f7f6f6;
+}
+.shifu text{
+	font-size: 24rpx;
+}
+.real-pay{
+	color: #666;
+}
+.right.time{
+	color: #999;
+}
+.bottom{
+	font-size: 28rpx;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	border-top: 1rpx solid #cccccc;
+}
+.order-left{
+	float: left;
+	padding: 15rpx 30rpx 5rpx;
+	margin-right: 100rpx;
+	text-align: center;
+}
+.top{
+	display: flex;
+}
+.top text{
+	color: #fe5512;
+	font-size: 35rpx;
+}
+.buy{
+	height: 90rpx;
+	line-height: 90rpx;
+	float: right;
+	width: 200rpx;
+	font-size: 32rpx;
+	background: #fe5512;
+	color: #fff;
+	text-align: center;
+}
