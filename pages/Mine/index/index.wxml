@@ -100,7 +100,7 @@
           <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
         </view>
       </view>
-      <view class="row" bindtap="{{isWxAuthorize?'wxBinded':'wxBind'}}">
+      <view class="row" bindtap="goWxAuthorize">
         <view class="left">
           <view class="coupon-icon tebie">
             <image style="width: 100%;" mode="widthFix" src="/images/mine/wxlogo.png"></image>

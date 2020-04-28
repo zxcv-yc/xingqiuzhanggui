@@ -1,14 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="title">{{isWxAuthorize?'您已绑定提现微信':'您暂未绑定提现微信'}}</view>
+  <view class="userinfo jus-start" wx:if="{{isWxAuthorize}}">
+    <view>
+      <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{}}" mode="cover"></image>
+    </view>
+    <view class="nickname">微信名{{userInfo.nickName}}</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <view bindtap="goMy">我的</view>
+  <button class="btn__" bindtap="goChangeWxBind">{{isWxAuthorize?'更换绑定':'绑定'}}</button>
 </view>

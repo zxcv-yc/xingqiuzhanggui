@@ -376,6 +376,13 @@
 					"id": -1,
 					"name": "我的",
 					"pathName": "pages/Mine/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定微信",
+					"pathName": "pages/Mine/wxAuthorize/wxAuthorize",
 					"scene": null
 				}
 			]

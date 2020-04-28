@@ -29,7 +29,7 @@ Page({
   /* 加载所有数据 */
   _loadData: function() {
     this.getContent();
-    this.checkBindWx()
+    // this.checkBindWx()
   },
 
   goOrder(e) {
@@ -61,7 +61,9 @@ Page({
   goManage() {
     Function.linkTo('/pages/Mine/manage/manage');
   },
-
+  goWxAuthorize:function(){
+    Function.linkTo('/pages/Mine/wxAuthorize/wxAuthorize');
+  },
   goGoodList() {
     Function.linkTo('/pages/Mine/list/list');
   },
@@ -84,26 +86,7 @@ Page({
 
     });
   },
-  //判断是否微信授权
-  checkBindWx: function() {
-    let members = wx.getStorageSync('members');
-    let shop_id = members.shop_id;
-    let param = {
-      shop_id: shop_id
-    };
-    mine.checkBindWx(param, res => {
-      if (res.data.opend_id) {
-        this.setData({
-          isWxAuthorize: 1
-        })
-      } else {
-        this.setData({
-          isWxAuthorize: false
-        })
-      }
-      console.log(res)
-    })
-  },
+ 
 
 
   /* 下拉刷新*/

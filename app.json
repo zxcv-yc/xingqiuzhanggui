@@ -28,7 +28,8 @@
     "pages/Mine/suitableGoods/suitableGoods",
     "pages/Mine/withdrawInfo/withdrawInfo",
     "pages/Mine/withdrawalRules/withdrawalRules",
-    "pages/Mine/wxAuthorize/wxAuthorize"
+    "pages/Mine/wxAuthorize/wxAuthorize",
+    "pages/Mine/changeWxBind/changeWxBind"
   ],
   "window": {
     "navigationBarTitleText": "星球掌柜",
