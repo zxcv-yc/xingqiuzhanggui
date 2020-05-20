@@ -72,6 +72,9 @@ Page({
           };
           index.login(param, (res) => {
             if (res.code == 200) {
+              // let member = res.data
+              // member.maojie = 1
+              // wx.setStorageSync('members', member);
               wx.setStorageSync('members', res.data);
               Function.linkTo('/pages/Index/index/index', true);
             } else {

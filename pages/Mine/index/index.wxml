@@ -76,7 +76,8 @@
           </view>
         </button>
       </view>
-      <view class="row" bindtap="goCouponManagement">
+      <view wx:if="{{type!=2}}">
+        <view class="row" bindtap="goCouponManagement">
 
           <view class="left">
             <view class="coupon-icon">
@@ -87,65 +88,63 @@
           <view class="right">
             <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
           </view>
-      
-      </view>
-      <view class="row" bindtap="goWithdraw">
-        <view class="left">
-          <view class="coupon-icon tebie">
-            <image style="width: 100%;" mode="widthFix" src="/images/mine/tixian.png"></image>
-          </view>
-          <view class="coupon-text">银行卡信息</view>
-        </view>
-        <view class="right">
-          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
-        </view>
-      </view>
-      <view class="row" bindtap="goWxAuthorize">
-        <view class="left">
-          <view class="coupon-icon tebie">
-            <image style="width: 100%;" mode="widthFix" src="/images/mine/wxlogo.png"></image>
-          </view>
-          <view class="coupon-text">绑定微信</view>
-        </view>
-        <view class="right">
-          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
-        </view>
-      </view>
-      <view class="row" bindtap="goGoodList">
-        <view class="left">
-          <view class="coupon-icon tebie">
-            <image style="width: 100%;" mode="widthFix" src="/images/icon/shenhe.png"></image>
-          </view>
-          <view class="coupon-text">商品审核</view>
-          <view class="tipnew" wx:if="{{info.waitnum > 0}}">{{info.waitnum}}</view>
-        </view>
-        <view class="right">
-          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
-        </view>
-      </view>
 
-
-
-      <view class="row" bindtap="goRecord">
-        <view class="left">
-          <view class="coupon-icon tebie">
-            <image style="width: 100%;" mode="widthFix" src="/images/mine/txjl.png"></image>
+        </view>
+        <view class="row" bindtap="goWithdraw">
+          <view class="left">
+            <view class="coupon-icon tebie">
+              <image style="width: 100%;" mode="widthFix" src="/images/mine/tixian.png"></image>
+            </view>
+            <view class="coupon-text">银行卡信息</view>
           </view>
-          <view class="coupon-text">提现</view>
-        </view>
-        <view class="right">
-          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
-        </view>
-      </view>
-      <view class="row" bindtap="goManage">
-        <view class="left">
-          <view class="coupon-icon">
-            <image style="width: 100%;" mode="widthFix" src="/images/mine/dianyuan.png"></image>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
           </view>
-          <view class="coupon-text">店员列表</view>
         </view>
-        <view class="right">
-          <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+        <view class="row" bindtap="goWxAuthorize">
+          <view class="left">
+            <view class="coupon-icon tebie">
+              <image style="width: 100%;" mode="widthFix" src="/images/mine/wxlogo.png"></image>
+            </view>
+            <view class="coupon-text">绑定微信</view>
+          </view>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+          </view>
+        </view>
+        <view class="row" bindtap="goGoodList">
+          <view class="left">
+            <view class="coupon-icon tebie">
+              <image style="width: 100%;" mode="widthFix" src="/images/icon/shenhe.png"></image>
+            </view>
+            <view class="coupon-text">商品审核</view>
+            <view class="tipnew" wx:if="{{info.waitnum > 0}}">{{info.waitnum}}</view>
+          </view>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+          </view>
+        </view>
+        <view class="row" bindtap="goRecord">
+          <view class="left">
+            <view class="coupon-icon tebie">
+              <image style="width: 100%;" mode="widthFix" src="/images/mine/txjl.png"></image>
+            </view>
+            <view class="coupon-text">提现</view>
+          </view>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+          </view>
+        </view>
+        <view class="row" bindtap="goManage">
+          <view class="left">
+            <view class="coupon-icon">
+              <image style="width: 100%;" mode="widthFix" src="/images/mine/dianyuan.png"></image>
+            </view>
+            <view class="coupon-text">店员列表</view>
+          </view>
+          <view class="right">
+            <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
+          </view>
         </view>
       </view>
       <view class="row" bindtap="goBindMobile">
@@ -159,6 +158,7 @@
           <image style="width: 100%;" mode="widthFix" src="/images/mine/next.png"></image>
         </view>
       </view>
+
     </view>
   </view>
 </view>

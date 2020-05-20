@@ -14,11 +14,15 @@ Page({
   data: {
     url: Config.Url,
     info: '',
-    isWxAuthorize: null
+    isWxAuthorize: null,
+    type:null
   },
 
   onLoad: function(options) {
-
+    let members = wx.getStorageSync('members');
+    this.setData({
+      type: members.type
+    })
   },
 
   onShow: function() {
@@ -61,7 +65,7 @@ Page({
   goManage() {
     Function.linkTo('/pages/Mine/manage/manage');
   },
-  goWxAuthorize:function(){
+  goWxAuthorize: function() {
     Function.linkTo('/pages/Mine/wxAuthorize/wxAuthorize');
   },
   goGoodList() {
@@ -86,7 +90,7 @@ Page({
 
     });
   },
- 
+
 
 
   /* 下拉刷新*/
@@ -117,9 +121,9 @@ Page({
                 };
                 mine.bindWx(param, res2 => {
                   Function.layer(res2.msg)
-                  setTimeout(function(){
+                  setTimeout(function() {
                     _this._loadData();
-                  },1500)
+                  }, 1500)
                 })
               } else {
                 console.log('登录失败！' + res1.errMsg)

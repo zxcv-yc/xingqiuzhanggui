@@ -1,5 +1,5 @@
 <view class="container home-container">
-    <view class="logo"><image style="width: 100%;" mode="widthFix" src="/images/index/login.png"></image></view>
+    <view class="logo"><image style="width: 100%;" mode="widthFix" src="/images/index/login1.png"></image></view>
     <view class="row">
       <view class="logo-icon"><image style="width: 100%;" mode="widthFix" src="/images/icon/account.png"></image></view>
       <view class="input"><input bindinput="bindaccountInput" placeholder="请输入账号" /></view>

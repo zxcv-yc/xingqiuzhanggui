@@ -18,7 +18,8 @@ var app = getApp();
 Page({
   data: {
     url: Config.Url,
-    level: 1
+    level: 1,
+    type:null
   },
 
   onLoad: function(options) {
@@ -31,6 +32,7 @@ Page({
     } else {
       this.setData({
         level: member.level,
+        type: member.type
       });
       if (member.level == 1) {
         wx.hideTabBar();
